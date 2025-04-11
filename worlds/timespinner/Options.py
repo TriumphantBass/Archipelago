@@ -45,6 +45,14 @@ class LoreChecks(Toggle):
     "Memories and journal entries contain items."
     display_name = "Lore Checks"
 
+class PureTorcher(Toggle):
+    "All lanterns contain checks. (Except tutorial)"
+    display_name = "Pure Torcher"
+
+class FindTheFlame(Toggle):
+    "Memories and journal entries contain items."
+    display_name = "Lanterns in Pure Torcher will not break without new item Cube of Bodie."
+
 class BossRando(Choice):
     "Wheter all boss locations are shuffled, and if their damage/hp should be scaled."
     display_name = "Boss Randomization"
@@ -441,6 +449,8 @@ class TimespinnerOptions(PerGameCommonOptions, DeathLinkMixin):
     pyramid_start: PyramidStart
     gate_keep: GateKeep
     royal_roadblock: RoyalRoadblock
+    pure_torcher: PureTorcher
+    find_the_flame: FindTheFlame
     trap_chance: TrapChance
     traps: Traps
 

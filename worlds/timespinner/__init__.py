@@ -131,6 +131,8 @@ class TimespinnerWorld(World):
             "PyramidStart": self.options.pyramid_start.value,
             "GateKeep": self.options.gate_keep.value,
             "RoyalRoadblock": self.options.royal_roadblock.value,
+            "PureTorcher": self.options.pure_torcher.value,
+            "FindTheFlame": self.options.find_the_flame.value,
             "Traps": self.options.traps.value,
             "DeathLink": self.options.death_link.value,
             "StinkyMaw": True,
@@ -198,6 +200,8 @@ class TimespinnerWorld(World):
         self.options.rising_tides.value = slot_data["RisingTides"]
         self.options.unchained_keys.value = slot_data["UnchainedKeys"]
         self.options.back_to_the_future.value = slot_data["PresentAccessWithWheelAndSpindle"]
+        self.options.pure_torcher.value = slot_data["PureTorcher"]
+        self.options.find_the_flame.value = slot_data["FindTheFlame"]
         self.options.traps.value = slot_data["Traps"]
         self.options.death_link.value = slot_data["DeathLink"]
         # Readonly slot_data["StinkyMaw"]

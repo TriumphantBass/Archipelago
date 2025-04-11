@@ -1075,7 +1075,8 @@ if "Timespinner" in network_data_package["games"]:
             "Lab Glasses":         "https://timespinnerwiki.com/mediawiki/images/4/4a/Lab_Glasses.png",
             "Eye Orb":             "https://timespinnerwiki.com/mediawiki/images/a/a4/Eye_Orb.png",
             "Lab Coat":            "https://timespinnerwiki.com/mediawiki/images/5/51/Lab_Coat.png", 
-            "Demon":               "https://timespinnerwiki.com/mediawiki/images/f/f8/Familiar_Demon.png", 
+            "Demon":               "https://timespinnerwiki.com/mediawiki/images/f/f8/Familiar_Demon.png",
+            "Cube of Bodie":       "https://timespinnerwiki.com/mediawiki/images/1/14/Menu_Icon_Stats.png"
         }
 
         timespinner_location_ids = {
@@ -1126,6 +1127,11 @@ if "Timespinner" in network_data_package["games"]:
         if (slot_data["PyramidStart"]):
             timespinner_location_ids["Ancient Pyramid"] += [
                 1337233, 1337234, 1337235]
+        if (slot_data["PureTorcher"]):
+            # TODO add checks 1337250-1337781
+            timespinner_location_ids["Present"] += []
+            timespinner_location_ids["Past"] += []
+            timespinner_location_ids["Ancient Pyramid"] += []
 
         display_data = {}
 
